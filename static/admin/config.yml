@@ -21,7 +21,7 @@ collections:
   - name: "pages"
     label: "Pages"
     files:
-      - file: "src/pages/homepage/homepage.md"
+      - file: "src/pages/homepage/index.md"
         label: "homepage"
         name: "Homepage"
         fields:
