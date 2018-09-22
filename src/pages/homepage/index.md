@@ -1,8 +1,7 @@
 ---
-templateKey: 'homepage'
-path: /
-firstName: hannah
-image: /img/jumbotron.jpg
-lastName: frishberg
+templateKey: homepage
+firstName: Hannah
+image: /img/imageedit_2_7590572763.gif
+lastName: 'Frishberg '
 ---
 ### HOMEPAGE
