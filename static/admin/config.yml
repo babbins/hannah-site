@@ -18,3 +18,4 @@ collections:
           - {label: "Image", name: "image", widget: "image"}
           - {label: "Last Name", name: "lastName", widget: "string", default: "Frishberg"}
           - {label: "Body" , name: "body", widget: "markdown"}
+          - {label: "Selected Works", name: "selectedWorks", widget: "markdown"}
