@@ -18,6 +18,3 @@ collections:
           - {label: "Image", name: "image", widget: "image"}
           - {label: "Last Name", name: "lastName", widget: "string", default: "Frishberg"}
           - {label: "Body" , name: "body", widget: "markdown"}
-          - {label: "At", name: "atSvg", widget: "image"}
-          - {label: "Instagram", name: "instagramSvg", widget: "image"}
-          - {label: "Twitter", name: twitterSvg", widget: "image"}

@@ -6,11 +6,11 @@ import HomepageHeader from '../components/HomepageHeader';
 export default class IndexPage extends React.Component {
   render() {
     const {frontmatter, html} = this.props.data.allMarkdownRemark.edges[0].node;
-    const {firstName, image, lastName, atSvg, instagramSvg, twitterSvg} = frontmatter
+    const {firstName, image, lastName} = frontmatter
 
     return (
       <Layout>
-        <HomepageHeader firstName={firstName} lastName={lastName} image={image} html={html} atSvg={atSvg} instagramSvg={instagramSvg} twitterSvg={twitterSvg}/>
+        <HomepageHeader firstName={firstName} lastName={lastName} image={image} html={html} />
       </Layout>
     )
   }
@@ -29,9 +29,6 @@ export const pageQuery = graphql`
             firstName
             lastName
             image
-            atSvg
-            instagramSvg
-            twitterSvg
           }
         }
       }
