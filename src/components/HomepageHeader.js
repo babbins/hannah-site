@@ -2,9 +2,9 @@ import React from 'react'
 import styled from 'styled-components';
 import Content from './Content';
 import { colors } from '../theme'
-import Email from './email';
-import Twitter from './twitter';
-import Instagram from './instagram';
+import Email from './Email';
+import Twitter from './Twitter';
+import Instagram from './Instagram';
 
 const HeaderContainer = styled.div`
   background-color: ${colors.darkblue};
