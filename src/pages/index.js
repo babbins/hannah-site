@@ -1,14 +1,16 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
+import HomepageHeader from '../components/HomepageHeader';
 
 export default class IndexPage extends React.Component {
   render() {
-    console.log(this.props);
+    const {frontmatter, html} = this.props.data.allMarkdownRemark.edges[0].node;
+    const {firstName, image, lastName, atSvg, instagramSvg, twitterSvg} = frontmatter
 
     return (
       <Layout>
-        <div> This the homepage</div>
+        <HomepageHeader firstName={firstName} lastName={lastName} image={image} html={html} atSvg={atSvg} instagramSvg={instagramSvg} twitterSvg={twitterSvg}/>
       </Layout>
     )
   }
@@ -21,10 +23,15 @@ export const pageQuery = graphql`
     ) {
       edges {
         node {
+          html
           frontmatter {
             templateKey
             firstName
             lastName
+            image
+            atSvg
+            instagramSvg
+            twitterSvg
           }
         }
       }
