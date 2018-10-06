@@ -1,24 +1,47 @@
 import React from 'react'
 import { colors } from '../theme'
 import styled from 'styled-components'
-import Content from './Content'
+import ReactMarkdown from 'react-markdown'
 
 const Wrapper = styled.div`
-  background-color: ${colors.lightblue};
+  width: 85%;
+  max-width: 960px;
+  padding: 40px 0 70px 0;
+  margin: 0 auto;
   color: ${colors.gray};
   font-family: Helvetica, sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
+  & p {
+    margin: 10px 0;
+    font-size: 1.125em;
+  }
+  & a {
+    color: inherit;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  & a:hover {
+    border-bottom: 1px ${colors.gray} solid;
+  }
+  & h1 {
+    font-size: 1.5em;
+    top: -7px;
+    margin: 20px 0;
+  }
 `
-const StyledContent = styled(Content)`
-  display: block;
+const Background = styled.div`
+  background-color: ${colors.lightblue};
 `
 
 const SelectedWorks = ({ selectedWorks }) => (
-  <Wrapper>
-    <StyledContent content={selectedWorks} />
-  </Wrapper>
+  <Background>
+    <Wrapper>
+      <ReactMarkdown source={selectedWorks} />
+    </Wrapper>
+  </Background>
 )
 
 export default SelectedWorks;

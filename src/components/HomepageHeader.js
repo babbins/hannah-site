@@ -8,7 +8,7 @@ import Instagram from './Instagram';
 
 const HeaderContainer = styled.div`
   background-color: ${colors.darkblue};
-  color: white;
+  color: ${colors.lightgray};
   font-family: Helvetica, sans-serif;
 `
 
@@ -48,14 +48,14 @@ const SocialLinks = styled.div`
 
 const SocialLink = styled.div`
   & a {
-      color: white;
+      color: ${colors.lightgray};
       font-style: italic;
-      border-bottom: 1px gray solid;
+      border-bottom: 1px ${colors.gray} solid;
       display: inline-block;
     }
   & a:hover {
     text-decoration: none;
-    border-bottom: 1px white solid;
+    border-bottom: 1px ${colors.lightgray} solid;
   }
   & svg {
     display: block;
@@ -63,7 +63,7 @@ const SocialLink = styled.div`
     width: 20px;  
   }
   & svg > path {
-    fill: #fff;
+    fill: ${colors.lightgray};
   }
   @media(max-width: 769px) {
     & span {
