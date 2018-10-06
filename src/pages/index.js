@@ -6,7 +6,7 @@ import SelectedWorks from '../components/SelectedWorks';
 
 export default class IndexPage extends React.Component {
   render() {
-    const {frontmatter, html} = this.props.data.allMarkdownRemark.edges[0].node;
+    const {frontmatter, html, selectedWorks} = this.props.data.allMarkdownRemark.edges[0].node;
     const {firstName, image, lastName} = frontmatter
 
     return (
@@ -31,6 +31,7 @@ export const pageQuery = graphql`
             firstName
             lastName
             image
+            selectedWorks
           }
         }
       }
