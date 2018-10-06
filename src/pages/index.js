@@ -8,8 +8,6 @@ export default class IndexPage extends React.Component {
   render() {
     const {frontmatter, html} = this.props.data.allMarkdownRemark.edges[0].node;
     const {firstName, image, lastName, selectedWorks} = frontmatter
-    console.log('sw',selectedWorks)
-    console.log('html', html);
     return (
       <Layout>
         <HomepageHeader firstName={firstName} lastName={lastName} image={image} html={html} />
