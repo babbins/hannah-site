@@ -1,7 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import './all.sass'
-import favicon from '../../static/favicon.ico'
+import favicon from './favicon.ico'
 
 const TemplateWrapper = ({ children }) => (
   <div>
