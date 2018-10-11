@@ -50,7 +50,7 @@ const SocialLink = styled.div`
   & a {
       color: ${colors.lightgray};
       font-style: italic;
-      border-bottom: 1px ${colors.gray} solid;
+      border-bottom: 1px transparent solid;
       display: inline-block;
     }
   & a:hover {
