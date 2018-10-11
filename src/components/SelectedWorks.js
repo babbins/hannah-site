@@ -6,7 +6,7 @@ import ReactMarkdown from 'react-markdown'
 const Wrapper = styled.div`
   width: 85%;
   max-width: 960px;
-  padding: 40px 0 70px 0;
+  padding: 30px 0 70px 0;
   margin: 0 auto;
   color: ${colors.gray};
   font-family: Helvetica, sans-serif;
@@ -17,6 +17,9 @@ const Wrapper = styled.div`
   & p {
     margin: 10px 0;
     font-size: 1.125em;
+    @media (min-width: 768px) {
+      align-self: start;
+    };
   }
   & a {
     color: inherit;

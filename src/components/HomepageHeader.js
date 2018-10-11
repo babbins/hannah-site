@@ -20,7 +20,7 @@ const HeaderWrapper = styled.div`
   width: 85%;
   max-width: 725px;
   margin: 0 auto;
-  padding: 5% 0 10% 0;
+  padding: 5% 0 5% 0;
   font-size: 1.125em;
 `
 
@@ -60,7 +60,7 @@ const SocialLink = styled.div`
   & svg {
     display: block;
     margin: 0 auto 5px auto;
-    width: 20px;  
+    width: 20px;
   }
   & svg > path {
     fill: ${colors.lightgray};
