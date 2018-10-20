@@ -18,9 +18,7 @@ const Wrapper = styled.div`
     margin: 10px 0;
     font-size: 1.125em;
     text-align: left;
-    @media (min-width: 768px) {
-      align-self: start;
-    };
+    align-self: start;
   }
   & a {
     color: inherit;
