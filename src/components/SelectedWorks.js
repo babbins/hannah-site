@@ -38,10 +38,14 @@ const Background = styled.div`
   background-color: ${colors.lightblue};
 `
 
+function LinkRenderer(props) {
+  return <a href={props.href} target="_blank">{props.children}</a>
+}
+
 const SelectedWorks = ({ selectedWorks }) => (
   <Background>
     <Wrapper>
-      <ReactMarkdown source={selectedWorks} />
+      <ReactMarkdown source={selectedWorks} renderers={{link: LinkRenderer}}/>
     </Wrapper>
   </Background>
 )
