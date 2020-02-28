@@ -102,9 +102,9 @@ export const HomepageHeader = ({
         </a>
         </SocialLink>
         <SocialLink>
-          <a href="https://twitter.com/hfrishberg" target="_blank">
+          <a href="https://twitter.com/hanfrish" target="_blank">
             <Twitter />
-            <span>@hfrishberg</span>
+            <span>@hanfrish</span>
           </a>
         </SocialLink>
       </SocialLinks>
